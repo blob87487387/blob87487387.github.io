@@ -1,389 +1,62 @@
-<html lang="en" class="wf-cfcrackbold-n4-active wf-allerdisplay-n4-active wf-impact-n4-active wf-active"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
-  <link rel="stylesheet" href="assets/css/app.css" type="text/css">
-  <title>
-      Moto X3M
-  </title>
-<meta name="description" content="Moto X3M is an online bike racing game">
-<meta name="robots" content="noindex,nofollow">
-  
-<style>
-.pokiSdkContainer {
-overflow: hidden;
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-z-index: 1000;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.pokiSdkContainer.pokiSdkFixed {
-position: fixed;
-}
-
-.pokiSdkContainer.pokiSdkVisible {
-display: block;
-}
-
-.pokiSdkContainer.pokiSdkHidden,
-.pokiSdkSpinnerContainer.pokiSdkHidden {
-display: none;
-}
-
-.pokiSdkContainer.pokiSdkHidden,
-.pokiSdkSpinnerContainer {
-pointer-events: none;
-}
-
-.pokiSdkSpinnerContainer {
-z-index: 10;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: url('https://a.poki.com/images/thumb_anim_2x.gif') 50% 50% no-repeat;
-user-select: none;
-}
-
-.pokiSdkInsideContainer {
-background: #000;
-position: relative;
-z-index: 1;
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-
-opacity: 0;
--webkit-transition: opacity 0.5s ease-in-out;
--moz-transition: opacity 0.5s ease-in-out;
--ms-transition: opacity 0.5s ease-in-out;
--o-transition: opacity 0.5s ease-in-out;
-transition: opacity 0.5s ease-in-out;
-}
-
-.pokiSdkContainer.pokiSdkVisible .pokiSdkInsideContainer {
-opacity: 1;
-}
-
-.pokiSDKAdContainer, .pokiSdkVideoContainer {
-position: absolute;
-width: 100%;
-height: 100%;
-}
-
-.pokiSdkStartAdButton {
-position: absolute;
-z-index: 9999;
-top: 0;
-
-padding-top: 10%;
-width: 100%;
-height: 100%;
-text-align: center;
-color: #FFF;
-
-font: 700 15pt 'Arial', sans-serif;
-font-weight: bold;
-letter-spacing: 1px;
-transition: 0.1s ease-in-out;
-line-height: 1em;
-}
-
-.pokiSdkPauseButton {
-cursor:pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-}
-
-.pokiSdkPauseButton:before {
-content: '';
-position: absolute;
-width: 100px;
-height: 100px;
-display: block;
-border: 2px solid #fff;
-border-radius: 50%;
-user-select: none;
-background-color: rgba(0, 0, 0, 0.6);
-transition: background-color 0.5s ease;
-animation: 1s linear infinite pulse;
-}
-
-.pokiSdkPauseButton:after {
-content: '';
-position: absolute;
-display: block;
-box-sizing: border-box;
-border-color: transparent transparent transparent #fff;
-border-style: solid;
-border-width: 26px 0 26px 40px;
-pointer-events: none;
-animation: 1s linear infinite pulse;
-left: 6px;
-}
-.pokiSdkPauseButtonBG {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  content: '';
-  background: rgba(0, 43, 80, 0.5);
-  width: 100%;
-  height: 100%;
-}
-
-.pokiSdkPauseButtonBG:hover{
-background: rgba(0, 43, 80, 0.7);
-}
-
-@keyframes pulse {
-0% {
-  transform: translate(-50%, -50%) scale(0.95);
-}
-70% {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-100% {
-  transform: translate(-50%, -50%) scale(0.95);
-}
-}
-
-.pokiSdkProgressContainer {
-background: #B8C7DD;
-width: 100%;
-height: 5px;
-position: absolute;
-bottom: 0;
-z-index: 9999;
-}
-
-.pokiSdkProgressBar {
-position:relative;
-bottom:0px;
-background: #FFDC00;
-height: 100%;
-width: 0%;
-transition: width 0.5s;
-transition-timing-function: linear;
-}
-
-.pokiSdkProgressBar.pokiSdkVisible, .pokiSdkPauseButton.pokiSdkVisible, .pokiSdkStartAdButton.pokiSdkVisible {
-display: block;
-pointer-events: auto;
-}
-
-.pokiSdkProgressBar.pokiSdkHidden, .pokiSdkPauseButton.pokiSdkHidden, .pokiSdkStartAdButton.pokiSdkHidden {
-display: none;
-pointer-events: none;
-}
-</style><script src="/poki-sdk-core-v2.263.0.js" type="text/javascript" crossorigin="anonymous"></script><script type="text/javascript" async="" src="null.html?https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script><script type="text/javascript" async="" src="null.html?https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script type="text/javascript" async="" src="null.html?https://a.poki.com/prebid/prebid6.12.0.js"></script><link rel="stylesheet" href="assets/css/AllerDisplay.css" media="all"><link rel="stylesheet" href="assets/css/CfCrackBold.css" media="all"><link rel="stylesheet" href="assets/css/impact.css" media="all"><script type="text/javascript" async="" src="null.html?https://c.amazon-adsystem.com/aax2/apstag.js"></script><style>
-.pokiSdkContainer {
-overflow: hidden;
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-z-index: 1000;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.pokiSdkContainer.pokiSdkFixed {
-position: fixed;
-}
-
-.pokiSdkContainer.pokiSdkVisible {
-display: block;
-}
-
-.pokiSdkContainer.pokiSdkHidden,
-.pokiSdkSpinnerContainer.pokiSdkHidden {
-display: none;
-}
-
-.pokiSdkContainer.pokiSdkHidden,
-.pokiSdkSpinnerContainer {
-pointer-events: none;
-}
-
-.pokiSdkSpinnerContainer {
-z-index: 10;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: url('https://a.poki.com/images/thumb_anim_2x.gif') 50% 50% no-repeat;
-user-select: none;
-}
-
-.pokiSdkInsideContainer {
-background: #000;
-position: relative;
-z-index: 1;
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-
-opacity: 0;
--webkit-transition: opacity 0.5s ease-in-out;
--moz-transition: opacity 0.5s ease-in-out;
--ms-transition: opacity 0.5s ease-in-out;
--o-transition: opacity 0.5s ease-in-out;
-transition: opacity 0.5s ease-in-out;
-}
-
-.pokiSdkContainer.pokiSdkVisible .pokiSdkInsideContainer {
-opacity: 1;
-}
-
-.pokiSDKAdContainer, .pokiSdkVideoContainer {
-position: absolute;
-width: 100%;
-height: 100%;
-}
-
-.pokiSdkStartAdButton {
-position: absolute;
-z-index: 9999;
-top: 0;
-
-padding-top: 10%;
-width: 100%;
-height: 100%;
-text-align: center;
-color: #FFF;
-
-font: 700 15pt 'Arial', sans-serif;
-font-weight: bold;
-letter-spacing: 1px;
-transition: 0.1s ease-in-out;
-line-height: 1em;
-}
-
-.pokiSdkPauseButton {
-cursor:pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-}
-
-.pokiSdkPauseButton:before {
-content: '';
-position: absolute;
-width: 100px;
-height: 100px;
-display: block;
-border: 2px solid #fff;
-border-radius: 50%;
-user-select: none;
-background-color: rgba(0, 0, 0, 0.6);
-transition: background-color 0.5s ease;
-animation: 1s linear infinite pulse;
-}
-
-.pokiSdkPauseButton:after {
-content: '';
-position: absolute;
-display: block;
-box-sizing: border-box;
-border-color: transparent transparent transparent #fff;
-border-style: solid;
-border-width: 26px 0 26px 40px;
-pointer-events: none;
-animation: 1s linear infinite pulse;
-left: 6px;
-}
-.pokiSdkPauseButtonBG {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  content: '';
-  background: rgba(0, 43, 80, 0.5);
-  width: 100%;
-  height: 100%;
-}
-
-.pokiSdkPauseButtonBG:hover{
-background: rgba(0, 43, 80, 0.7);
-}
-
-@keyframes pulse {
-0% {
-  transform: translate(-50%, -50%) scale(0.95);
-}
-70% {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-100% {
-  transform: translate(-50%, -50%) scale(0.95);
-}
-}
-
-.pokiSdkProgressContainer {
-background: #B8C7DD;
-width: 100%;
-height: 5px;
-position: absolute;
-bottom: 0;
-z-index: 9999;
-}
-
-.pokiSdkProgressBar {
-position:relative;
-bottom:0px;
-background: #FFDC00;
-height: 100%;
-width: 0%;
-transition: width 0.5s;
-transition-timing-function: linear;
-}
-
-.pokiSdkProgressBar.pokiSdkVisible, .pokiSdkPauseButton.pokiSdkVisible, .pokiSdkStartAdButton.pokiSdkVisible {
-display: block;
-pointer-events: auto;
-}
-
-.pokiSdkProgressBar.pokiSdkHidden, .pokiSdkPauseButton.pokiSdkHidden, .pokiSdkStartAdButton.pokiSdkHidden {
-display: none;
-pointer-events: none;
-}
-</style></head>
-
-<body>
-
-  <div id="content" style="display: block;"><canvas width="672" height="480" style="display: block; touch-action: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 1074px; height: 767px; cursor: inherit; margin-left: 0px;"></canvas></div>
-  <div id="orientation" style="display: none;"></div>
-  <div id="loader" style="display: none;">Loading ...</div>
-
-  <script src="/poki-sdk.js"></script>    
-  <script src="/poki-sdk-core-v2.263.0.js" type="text/javascript" crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="assets/lib/nape.min.js">
-      var nape = "nape.min.js";
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play minecraft 1.8 in your browser">
+  <meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8">
+  <title>EaglercraftX</title>
+  <meta property="og:locale" content="en-US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="EaglercraftX 1.8">
+  <meta property="og:description" content="Play minecraft 1.8 in your browser">
+  <meta property="og:image" content="favicon.png">
+  <link type="image/png" rel="shortcut icon" href="favicon.png">
+  <script type="text/javascript" src="classes.js"></script>
+  <script type="text/javascript" src="fix-webm-duration.js"></script>
+  <script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script>
+  <script type="text/javascript">
+    window.addEventListener("load", () => {
+      if (document.location.href.startsWith("file:")) {
+        alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
+      } else {
+        window.eaglercraftXOpts = {
+          container: "game_frame",
+          assetsURI: "assets.epk",
+          localesURI: "lang/",
+          servers: [
+            { addr: "wss://mc.asspixel.net", name: "AssPixel" },
+            { addr: "wss://sus.shhnowisnottheti.me", name: "Ayunboom" },
+            { addr: "wss://aeon-network.net/1.8", name: "Aeon" },
+            { addr: "wss://beta.vanillacraftsmp.org/", name: "VanillaCraft" },
+            { addr: "wss://play.craftclue.rocks", name: "CraftClue" },
+            { addr: "wss://survival.asianf4rmer.repl.co/", name: "Asian F4rmer-survival" },
+            { addr: "wss://mc.sealcentral.co", name: "SealCraft" },
+            { addr: "wss://g.deev.is/eaglerx-reference", name: "Reference Implementation" },
+          ],
+        };
+        main();
+      }
+    });
   </script>
-  <script type="text/javascript" src="assets/lib/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="assets/lib/easeljs-0.8.2.combined.js"></script>
-  <script type="text/javascript" src="assets/lib/bluebird.min.js"></script>
-  <script type="text/javascript" src="assets/lib/phaser.min.js"></script>
-  <script type="text/javascript" src="assets/lib/phaser-cachebuster.min.js"></script>
-  <script type="text/javascript" src="assets/lib/phaser-super-storage.min.js"></script>
-  <script type="text/javascript" src="assets/lib/dragonBones.min.js"></script>
-  
-<script type="text/javascript" src="motox3m.min.js?835771e363cc42d71185"></script>
-<div class="pokiSdkContainer pokiSdkHidden pokiSdkFixed"><div class="pokiSdkInsideContainer"><div class="pokiSdkProgressContainer pokiSdkHidden"><div class="pokiSdkProgressBar" style="width: 0%;"></div></div><video id="pokiSDKVideoContainer" class="pokiSdkVideoContainer" playsinline="playsinline" muted="muted"></video><div id="pokiSDKAdContainer" class="pokiSDKAdContainer"></div></div><div class="pokiSdkSpinnerContainer"></div><div class="pokiSdkPauseButton pokiSdkHidden"><div class="pokiSdkPauseButtonBG"></div></div><div class="pokiSdkStartAdButton pokiSdkHidden">Tap anywhere to play ad</div></div></body></html>
+<style type="text/css">#button {
+display:none;
+}
+.imgb_vis {
+animation: imgb-animation 7s linear;
+}
+@keyframes imgb-animation {
+10% {
+  transform: translateX(0);
+}
+20% {
+  transform: translateX(100px);
+}
+90% {
+  transform: translateX(100px);
+}
+100% {
+  transform: translateX(0);
+}
+}</style></head>
+<body style="margin: 0px; width: 100vw; height: 100vh; overflow:hidden; onclick=" window.focus()";="" id="game_frame" onclick="window.focus()">
+
+<div id="button" class="imgb imgb_vis" style="position: fixed; top: 10%; left: -100px; z-index: 10; display: none;"><a target="_blank" href="https://sites.google.com/view/classroom-calender/" title="More of best Classroom Unblocked Games"><img src="https://www.eatpmp.com/cdn/shop/files/Famous-Cookie-Cocolate-Chip-21-1600x1600-1_large.webp?v=1697742144" width="60" height="60" style="cursor:pointer;" alt="More Unblocked Games"></a></div><script src="blob:https://images-opensocial.googleusercontent.com/959d5e14-aea9-4467-bcf4-fc8ae3f505da"></script></body></html>
